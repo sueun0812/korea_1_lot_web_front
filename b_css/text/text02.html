@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>text02.html</title>
+  <style>
+    body {
+      background-color: #000000;
+      color: #ffffff;
+    }
+
+    h1 {
+      background-color: #0f0;
+      color: #ff0000;
+    }
+
+    p {
+      background-color: #ccc;
+      color: #000;
+    }
+
+    h2 {
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+    }
+
+    span {
+      background-color: rgba(0, 0, 255, 0.5);
+      color: rgba(255, 0, 0, 0.5);
+    }
+
+    .hello {
+      width: 400px;
+      background-color: white;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .justify {
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <!-- 16진수 숫자0(검은색) / 알파벳f(흰색) -->
+  <!-- 6자리 : #RRGGBB >> 3자리 : RGB -->
+  <h1>안녕하세요</h1>
+  <p>반갑습니다.</p>
+
+  <!-- RGB 숫자 : rgb(r, g, b) 각 영역의 값을 0부터 225까지 -->
+  <!-- 의 a(alpha)값은 0 ~ 1까지의 값으로 지정 -->
+  <h2>안녕하세요</h2>
+  <span>반갑습니다.</span>
+
+  <!-- ? text-align 속성 -->
+  <p class="hello">안녕하세요</p>
+  <p class="hello center">안녕하세요</p>
+  <p class="hello justify">안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요  안녕하세요 안녕하세요 안녕하세요 안녕하세요안녕하세요안녕하세요 안녕하세요 안녕하세요</p>
+
+  <!-- ? line-height 속성 -->
+  <!-- 
+  기준이 현재 문단의 글자 크기
+  ex) 글자 크기가 16px인 문단의 줄 간격 : 1(16px) 
+  -->
+  <p style="line-height: 16px;">
+    안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요  안녕하세요 안녕하세요 안녕하세요 안녕하세요안녕하세요안녕하세요 안녕하세요 안녕하세요 안녕하세요안녕하세요안녕하세요  안녕하세요 안녕하세요 안녕하세요 안녕하세요안녕하세요안녕하세요 안녕하세요 안녕하세요안녕하세요안녕하세요  안녕하세요 안녕하세요 안녕하세요 안녕하세요안녕하세요안녕하세요 안녕하세요 안녕하세요안녕하세요안녕하세요  안녕하세요 안녕하세요 안녕하세요 안녕하세요안녕하세요안녕하세요 안녕하세요안녕하세요안녕하세요안녕하세요  안녕하세요 안녕하세요 안녕하세요 안녕하세요안녕하세요안녕하세요 안녕하세요안녕하세요안녕하세요안녕하세요  안녕하세요 안녕하세요 안녕하세요 안녕하세요안녕하세요안녕하세요 안녕하세요안녕하세요안녕하세요안녕하세요  안녕하세요 안녕하세요 안녕하세요 안녕하세요안녕하세요안녕하세요 안녕하세요
+  </p>
+
+  <div style="background-color: white; height: 100px;">
+    <p style="line-height: 100px; text-align: center;">세로 정렬 (가운데)</p>
+  </div>
+
+  <!-- ? text decoration 설정 -->
+  <div style="background-color: white;">
+    <span style="text-decoration: none; background-color: white; color: black;">none</span>
+    <span style="text-decoration: underline; background-color: white; color: black;">underline</span>
+    <span style="text-decoration: overline; background-color: white; color: black;">overline</span>
+    <span style="text-decoration: line-through; background-color: white; color: black;">line through</span>
+  </div>
+
+  <div style="background-color: #ccc;">
+    <!-- 
+    ? text shadow 속성 
+    : 가로거리 세로거리 번짐정도 색상
+    -->
+
+    <span style="text-shadow: 2px 2px 2px black;">text 그림자</span>
+    <span style="text-shadow: -2px -2px 2px black;">text 그림자</span>
+    <span style="text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);">text 그림자</span>
+
+    <!-- text-transform 예제 (깃허브에서 가져올 것) -->
+  </div>
+
+  <!-- letter(글자)) & word(단어) spacing -->
+
+  <p style="letter-spacing: 4px;">letter spacing </p>
+  <p style="word-spacing: 8px;">word spacing</p>
+
+  <!-- text-indent 들여쓰기 -->
+  <p style="text-indent: 20px;">text indent 속성</p>
+</body>
+</html>

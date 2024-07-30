@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>c_selector.html</title>
+  <link rel="stylesheet" href="./styles/c_selector.css">
+</head>
+<body>
+  <!--! 1. 전체 선택자 -->
+  <div id="universal">전체 선택자</div>
+  <p>문단입니다.</p>
+  <section>섹션 내용</section>
+
+  <!--! 2. 타입 선택자 -->
+  <h2>타입 선택자</h2>
+  <p>문단 입니다.</p>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+  </ul>
+
+  <!--! 3. 클래스 선택자 -->
+  <!--! 4. 아이디 선택자 -->
+  <button class="btn" id="basic">기본버튼</button>
+  <button class="btn primary">주요버튼</button>
+  <button class="btn secondary">보조버튼</button>
+
+  <!--! 5. 그룹 선택자 -->
+  <header id="header">헤더</header>
+  <footer id="footer">푸터</footer>
+
+  <!--
+  ? (+) 가상 클래스 선택자 
+  >> 사용자의 동작에 반응하는 가상 클래스 선택자
+  
+  -->
+
+  <div class="container">
+    <nav class="navi">
+      <!-- ul>(li>a)*4 -->
+      <ul>
+        <li><a href="#">이용 안내</a></li>
+        <li><a href="#">객실 소개</a></li>
+        <li><a href="#">예약 방법 및 요금</a></li>
+        <li><a href="https://www.google.com">예약하기</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+
+</body>
+</html>

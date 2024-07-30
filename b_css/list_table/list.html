@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>list.html</title>
+
+  <style>
+    #li-image {
+      /* url('이미지 경로') 함수 */
+      list-style: url(../../images/dog01.jpg);
+    }
+  </style>
+</head>
+<body>
+  <!-- ! list-style-type 속성 -->
+  <!-- ? 1. ul 태그의 목록 아이템 변경 
+    
+  disc(기본값), circle, square
+  -->
+  <ul style="list-style: disc outside;">
+    <li>Item 01</li>
+    <li>Item 02</li>
+    <li>Item 03</li>
+    <li>Item 04</li>
+  </ul>
+
+  <!-- ? 2. ol 태그의 목록 순서값 변경 -->
+  <ol style="list-style: upper-roman inside;">
+    <li>Item01</li>
+    <li>Item02</li>
+    <li>Item03</li>
+    <li>Item04</li>
+  </ol>
+
+  <!-- ? 3. 리스트 ul 아이콘, ol 순서값 제거 -->
+  <ol style="list-style-type: none;">
+    <ul>1</ul>
+    <ul>2</ul>
+  </ol>
+  
+  <ul id="li-image">
+    <li>불릿 이미지를 사용한 아이템</li>
+  </ul>
+
+
+</body>
+</html>

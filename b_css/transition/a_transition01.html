@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>a_transistion01.html</title>
+  <style>
+    #container {
+      width: 150px;
+      height: 150px;
+      background-color: lightblue;
+      font-size: 16px;
+      /* 
+      ! 어떤 속성에 얼마동안 어떤 효과를 지정할지 작성
+      all 속성 : 모든 변경 가능한 속성에 적용 
+      +) 속성명을 나열하여 각각 적용 가능(콤마로 구분)
+
+      1s는 1000ms(밀리초)
+      */
+      /* transition: all 500ms ease-in-out; */
+      transition: background-color, padding, border-radius 0.5s ease-in-out;
+    }
+
+    #container:hover {
+      background-color: lightcoral;
+      font-size: 20px;
+      padding: 20px;
+      border-radius: 50%;
+    }
+
+    /* 트랜지션 예제 */
+    .box {
+      display: flex;
+    }
+
+    .inner {
+      width: 100px;
+      height: 100px;
+      background-color: lightgreen;
+
+      /* 
+        opacity - 투명도 설정
+        : 속성값으로 0 ~ 1의 값을 지정
+          (숫자가 커질수록 선명, 작아질수록 희미) 
+      */
+      opacity: 1;
+
+      transition: width 2s ease-in-out,
+                  background-color 1.5s ease-in-out,
+                  opacity 1s ease-in-out,
+                  height 0.5s ease-in-out;
+
+      transition: all 0.5s ease-in-out;
+    }
+
+    .inner:hover {
+      width: 200px;
+      height: 150px;
+      background-color: lightpink;
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+  transition 속성
+  : 트랜지션(이행, 지연)에 대한 효과를 지정
+  -->
+
+  <div id="container">
+    블럭
+  </div>
+
+  <hr />
+  <div class="box">
+    <div class="inner"></div>
+  </div>
+</body>
+</html>

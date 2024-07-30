@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>a_css.html</title>
+  
+  <!-- 내부 스타일 시트 -->
+  <style>
+  /* 
+  스타일 규칙  
+  
+  선택자 {
+    속성: 값;
+    속성: 값; ...
+    }
+  */
+  h3 {
+    color: lightblue;
+    background-color: black;
+  }
+
+  span {
+    color: tomato;
+    background-color: black;
+  }
+
+  strong {
+    font-size: large;
+  }
+  </style>
+
+  <!-- 외부 스타일 시트 연결 -->
+  <link rel="stylesheet" href="./styles/a_css.css">
+</head>
+<body>
+  <h2>2024 07 26 금요일</h2>
+  <p>안녕하세요 :)</p>
+
+  <!-- 인라인 스타일 -->
+  <h2 style="color: lightcoral;">인라인 스타일</h2>
+  <p style="color: lightgreen;">HTML에서 style 속성을 사용</p>
+
+  <!-- 내부 스타일 시트 -->
+    <h3>내부 스타일 시트</h3>
+    <span>head 태그 내에 style 태그를 사용</span>
+    <br />
+    <strong>스타일 태그 내에는 스타일 규칙을 사용</strong>
+
+  <!-- 외부 스타일 시트 -->
+  <table>
+    <tr>
+      <th>야구팀</th>
+      <th>연고지</th>
+      <th>감독</th>
+    </tr>
+    <tr>
+      <td>롯데</td>
+      <td>부산</td>
+      <td>김태형</td>
+    </tr>
+    <tr>
+      <td>두산</td>
+      <td>서울</td>
+      <td>이승엽</td>
+    </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>input02.html</title>
+</head>
+<body>
+  <!-- 1. submit & reset 속성값 -->
+  <h2>롯데 자이언츠 유니폼 주문하기</h2>
+  <form>
+    <label>
+      상품명
+      <input type="text" />
+    </label>
+  
+    <br />
+    <label>
+      수량
+      <input type="text" />
+    </label>
+  
+    <br /> 
+    <label>
+      배송 날짜 지정
+      <input type="date" />
+    </label>
+
+    <br />
+    <label>
+      배송 확인 메시지 전송 이메일
+      <input type="email" />
+    </label>
+
+    <hr />
+    <input type="submit" value="주문하기" />
+    <input type="reset" value="취소하기" />
+  </form>
+
+  <!-- 2. number & range 속성값 -->
+
+  <!-- number 속성값: 스핀박스를 활용하여 숫자를 선택 -->
+  <input type="number" min="0" max="10" step="2" />
+
+  <!-- range 속성값의 기본값: 0 ~ 100 -->
+  <input type="range" value="50" />
+
+  <!-- 3. button 속성값 -->
+  <input type="button" value="버튼에 표시할 내용" />
+  
+  <!-- 4. file 속성값 -->
+  <input type="file" />
+
+  <!-- 5. hidden 속성값 -->
+  <input type="hidden" />
+  
+  <input type="hidden" name="user-count" value="1" />
+</body>
+</html>

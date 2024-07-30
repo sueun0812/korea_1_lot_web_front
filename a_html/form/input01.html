@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>input01.html</title>
+</head>
+<body>
+  <!-- 
+    input 태그의 기본 속성
+
+    - type, name, value
+
+    type 속성의 값에 따라 input 태그의 형태가 달라짐
+  -->
+
+  <input type="text" />
+
+  <!-- 1. text & password 속성값 -->
+
+  <hr />
+  <label>
+    아이디
+    <input type="text" size="16" maxlength="5" placeholder="아이디를 입력해주세요." />
+  </label>
+  <br />
+  <label>
+    비밀번호
+    <input type="password" />
+  </label>
+
+  <!-- 2. email 속성값 -->
+  <br />
+  <form>
+    <label>
+      이메일
+      <input type="email" />
+    </label>
+    <button type="submit">전송 버튼</button>
+  </form>
+
+  <!-- 3. radio와 checkbox 속성값 -->
+  <br />
+  <h3>가장 좋아하는 KBO 프로야구 팀은?</h3>
+  <label>
+    <input type="checkbox" value="롯데" checked />롯데 자이언츠
+  </label>
+  <label>
+    <input type="checkbox" value="기아" />기아 타이거즈
+  </label>
+  <label>
+    <input type="checkbox" value="LG" checked />LG 트윈스
+  </label>
+  <label>
+    <input type="checkbox" value="한화" />한화 이글스
+  </label>
+
+  <h3>성별이 무엇입니까?</h3>
+  <label>
+    남 <input type="radio" name="gender" checked />
+  </label>
+  <label>
+    여 <input type="radio" name="gender" />
+  </label>
+  <label>
+    모름 <input type="radio" name="gender" />
+  </label>
+  
+  <br />
+  <h3>이벤트 메시지 수신 동의</h3>
+  <label>
+    동의함 <input type="radio" name="agree" checked />
+  </label>
+  <label>
+    동의 안 함 <input type="radio" name="agree" />
+  </label>
+</body>
+</html>

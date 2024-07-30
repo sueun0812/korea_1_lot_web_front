@@ -1,0 +1,44 @@
+h1 {
+  color: green;
+}
+
+/* id선택자 : #(샾) */
+#monday {
+  color: blueviolet;
+}
+
+/* class선택자 : .(마침표) */
+.git {
+  color: lightgoldenrodyellow;
+}
+
+/* 태그(타입, 요소) 선택자 */
+h2 {
+  color: blue !important;
+}
+
+h1 {
+  color: pink;
+}
+
+h1 {
+  color: red;
+}
+
+h1 {
+  color: orange;
+}
+
+/* 스타일 상속 */
+
+body {
+  font-size: 30px;
+  background-color: yellowgreen;
+}
+
+p {
+  font-size: 10px;
+  background-color: transparent;
+}
+
+

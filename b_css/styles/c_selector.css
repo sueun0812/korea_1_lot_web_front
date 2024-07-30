@@ -1,0 +1,111 @@
+/* 전체 선택자 : 기호 *(별표) */
+* {
+  margin: 0;
+  padding: 0;
+  color: red;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+#universal {
+  border: 1px solid black;
+}
+
+/* 타입, 태그, 요소 선택자 */
+h2 {
+  color: blue;
+}
+
+p {
+  color: green;
+}
+
+ul {
+  background-color: lightcoral;
+}
+
+/* 클래스 선택자 */
+.btn {
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+.primary {
+  background-color: red;
+  color: white;
+}
+
+.secondary {
+  background-color: green;
+  color: yellow;
+}
+
+#basic {
+  font-size: 20px;
+  background-color: lightgray;
+}
+
+/* 그룹 선택자: 태그, 아이디, 클래스를 동시 나열 가능 */
+#header, #footer, .secondary {
+  background-color: orange;
+  color: black;
+}
+
+#header {
+  color: pink;
+}
+
+/*? 가상 클래스 선택자 - 사용자 동작 */
+.container {
+  background-color: white;
+  width: 960px;
+}
+
+.navi {
+  width: 960px;
+  height: 60px;
+}
+
+.navi ul {
+  list-style: none;
+  background-color: white;
+}
+
+.navi ul li {
+  float: left;
+  padding: 10px;
+}
+
+/* 
+  ! 가상 클래스 
+  : 적용할 요소에 :(콜론) 지정 후 각 동작을 지정
+*/
+
+.navi a:link, .navi a:visited {
+  display: block;
+  font-size: 14px;
+  color: black;
+}
+
+.navi a:visited {
+  color: blue;
+}
+
+/* 마우스를 웹 요소에 올려놓을 때 적용 */
+.navi a:hover {
+  background-color: black;
+  color: white;
+}
+
+.navi a:focus {
+  background-color: pink;
+  color: black;
+}
+
+.navi a:active {
+  background-color: orange;
+  color: black;
+}

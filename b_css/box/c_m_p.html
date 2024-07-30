@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>c_m_p.html</title>
+  <link rel="stylesheet" href="./c_m_p.css">
+  
+</head>
+<body>
+  <!-- ! 1. 마진(margin) -->
+  <!-- 상/하 margin은 중첩되지만 좌/우 margin은 중첩되지 않음 -->
+  <div style="margin: 50px;"></div>
+  <div style="margin: 30px 50px;"></div>
+  <div style="margin: 30px 20px 50px;"></div>
+  <div style="margin: 30px 20px 60px 40px;"></div>
+  <div style="margin-left: 30px;"></div>
+
+  <!-- margin을 사용한 요소 "가운데" 정렬 -->
+  <div style="width: 300px; height: 300px;">
+    <!-- 가로축을 기준으로 좌우에 같은 값의 margin을 발생 
+    auto : 부모 요소에서 해당 요소의 너비값을 뺀 후 양 옆의 값을 1/2씩 차지
+    -->
+    <div style="margin: 0 auto; margin-top: 30px
+    ;"></div>
+
+    <!-- ! 2. 패딩(padding) -->
+    <h2 style="border: 1px solid black; padding: 10px;">패딩 여백</h2>
+    <h2 style="border: 1px solid black; padding-right: 4px;">패딩 여백</h2>
+    <h2 style="border: 1px solid black; padding-left: 14px;">패딩 여백</h2>
+  </div>
+
+  
+</body>
+</html>

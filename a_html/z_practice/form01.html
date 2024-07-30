@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form01.html</title>
+</head>
+
+<body>
+  <!--  
+    1. 페이지의 제목: h1 태그
+
+    2. 하나의 form 태그 내에서 작성
+      - 두 개의 fieldset (각 영역에는 legend 태그의 이름표 지정)
+
+    3. 모든 input 입력란은 필수 입력 항목
+
+    4. '이벤트와 새로운 소식'란은
+      radio 버튼으로 구현
+      >> name 속성
+
+    5. 나머지 코드는 이미지의 보이는 형태를 따라 작성
+  -->
+
+  <h1>롯데 자이언츠몰 회원 가입을 환영합니다.</h1>
+
+  <form action="">
+    <fieldset>
+      <legend>사용자 정보</legend>
+      <ul>
+        <li>
+          <label>
+            아이디
+            <input 
+              type="text" 
+              autofocus 
+              required 
+              placeholder="4자 ~ 10자 사이, 공백없이" 
+            />
+          </label>
+        </li>
+        <li>
+          <label>
+            이메일
+            <input 
+              type="email" 
+              required 
+            />
+          </label>
+        </li>
+        <li>
+          <label>
+            비밀번호
+            <input 
+              type="password" 
+              required 
+              placeholder="문자와 숫자, 특수 기호 포함" 
+            />
+          </label>
+        </li>
+        <li>
+          <label>비밀번호 확인
+            <input 
+              type="password" 
+              required 
+            />
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>이벤트와 새로운 소식</legend>
+
+      <label>
+        <input type="radio" name="mail" />
+        메일 수신
+      </label>
+      <label>
+        <input type="radio" name="mail" />
+        메일 수신 안 함
+      </label>
+    </fieldset>
+
+    <input type="submit" value="가입하기" />
+    <input type="reset" value="취소" />
+  </form>
+</body>
+
+</html>

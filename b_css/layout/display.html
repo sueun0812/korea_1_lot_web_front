@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>display.html</title>
+  <style>
+    .block {
+      /* 블록 레벨 요소로 만들어줌 */
+      display: block;
+      background-color: lightblue;
+
+      width: 100%;
+      margin: 10px 0;
+      padding: 15px;
+
+      text-align: center;
+    }
+
+    .inline {
+      /* 인라인 레벨 요소 */
+      display: inline;
+      background-color: lightgreen;
+
+      /* 
+      - 인라인 요소는 너비, 높이 지정 불가
+      - 패딩,마진이 좌우에만 적용됨
+      */
+
+      /* width: 100%; - 적용되지 않음 */
+      /* height: 50px; - 적용되지 않음 */
+
+      margin: 20px;
+      padding: 5px;
+    }
+
+    .inline-block {
+      /* 
+      인라인 + 블록 레벨 요소 
+      - 인라인 : 다른 요소와 같은 줄에 지정
+      - 블록 : 너비와 높이를 가짐
+      */
+      display: inline-block;
+
+      background-color: lightpink;
+
+      width: 200px;
+      height: 200px;
+
+      text-align: center;
+      line-height: 200px;
+
+      margin: 10px;
+      padding: 10px;
+    }
+
+    .none {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="block">Block Element</div>
+
+  <span class="inline">Inline Element</span>
+  <span class="inline">Inline Element2</span>
+
+  <!-- Inline-block 속성값 -->
+  <div class="inline-block">Inline-Block Element</div>
+
+  <div class="none">None Element</div>
+</body>
+</html>

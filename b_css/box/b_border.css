@@ -1,0 +1,36 @@
+.box {
+  width: 100px;
+  height: 100px;
+
+  display: inline-block;
+  margin: 15px;
+
+  font-size: 10px;
+  text-align: center;
+  /* 높이(height)값과 동일하게 지정 : 세로 정렬 */
+  line-height: 100px;
+
+  background-color: lightblue;
+  border-width: 5px;
+  border-width: 1px;
+  border-width: thin;
+  border-width: medium;
+  border-width: thick
+  ;
+}
+
+.boxes {
+  width: 100px;
+  height: 100px;
+
+  display: inline-block;
+  margin: 15px;
+
+  font-size: 10px;
+  text-align: center;
+  /* 높이(height)값과 동일하게 지정 : 세로 정렬 */
+  line-height: 100px;
+
+  background-color: lightblue;
+  border-style: solid;
+}

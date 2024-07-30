@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>div.html</title>
+  <style>
+    .box {
+      width: 300px;
+      border: 1px solid black;
+      margin: 10px;
+    }
+
+    .highlight {
+      color: yellow;
+      background-color: black;
+    }
+
+    #best {
+      font-weight: bolder;
+    }
+
+    #unique1 {
+      background-color: lightblue;
+      color: white;
+      text-align: center;
+    }
+
+    #unique2 {
+      border: 3px dotted lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <h1>div 태그</h1>
+
+  <!--  
+    div 태그
+    : css(스타일), js(기능)을 적용하기 위해 사용
+    : 웹 페이지의 여러 부분을 나누거나 묶는 데 사용
+  -->
+
+  <!-- class, id 속성을 사용하여 스타일링이나 기능 동작을 지정 -->
+
+  <!-- 
+  1. class 속성
+  : 마침표(.) 문자 뒤에 클래스 이름을 입력 
+  -->
+  <div class="box highlight" id="best">
+    class 속성 - 제일 중요
+  </div>
+  <div class="box">
+    class 속성
+  </div>
+  <div class="box highlight">
+    class 속성 - 중요
+  </div>
+  <div class="box">
+    class 속성
+  </div>
+
+  <!-- 
+  2. id 속성 
+  : 샾(#) 문자 뒤에 아이디 이름을 입력
+  -->
+  <div id="unique1">
+    id 속성1
+  </div>
+  <div id="unique2">
+    id 속성2
+  </div>
+
+  <hr />
+
+  <div class="container"></div>
+  <div class="container2"></div>
+
+  <div id="uni"></div>
+  <div id="unique"></div>
+
+  <div class=""></div>
+</body>
+</html>
