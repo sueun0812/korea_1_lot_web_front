@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex02.html</title>
+  <style>
+    #container {
+      display: flex;
+      border: 1px solid black;
+      width: 500px;
+      height: 500px;
+      justify-content: space-between;
+      /* flex-direction: column; */
+      align-self: self-end;
+    }
+    .inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .box {
+      display: flex;
+      border: 1px solid black;
+      width: 100px;
+      height: 100px;
+      
+    }
+
+    
+
+
+  </style>
+</head>
+<body>
+  <div id="container">
+
+    <div class="inner">
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <div class="inner">
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+  </div>
+
+
+  
+</body>
+</html>
