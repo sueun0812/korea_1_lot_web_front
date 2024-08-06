@@ -12,11 +12,12 @@ let str1 = 'hello';
 let str2 = "Hello";
 
 
+
 let str3 = `hello, world`;
 
 // +) 탬플릿 문자열
 
-let name = '정수은'
+let name = '정수은';
 
 // 문자열 내에 변수나 표현식을 사용할 수 있도록 하는 문자열
 console.log('안녕하세요', name, '입니다.');
@@ -47,7 +48,7 @@ console.log(typeof num);  // number
 console.log(typeof float);  // number
 
 // ! 3. boolean (논리형)
-// : 참(true), 거짓(flase) 값만을 가지는 자료형
+// : 참(true), 거짓(false) 값만을 가지는 자료형
 
 let bool1 = true;
 let bool2 = false;
