@@ -44,7 +44,7 @@ const addedTen = numbers.map(num => num + 10);
 console.log(addedTen);  // [11, 12, 13, 14, 15]
 
 // filter 사용
-// : 주엉진 ㄴ숫자 배열에서 홀수만 추출하여 새로운 배열을 생성
+// : 주어진 숫자 배열에서 홀수만 추출하여 새로운 배열을 생성
 const odds = addedTen.filter(num => num % 2 !== 0);
 console.log(odds);  // [ 11, 13, 15 ]
 
