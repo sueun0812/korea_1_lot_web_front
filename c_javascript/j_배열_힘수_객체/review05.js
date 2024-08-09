@@ -4,12 +4,10 @@
 
 // 추가 - 장바구니에 메뉴 추가
 // 조회 - 장바구니 메뉴 목록 조회
+//     - 장바구니 상품 총 가격
 // 수정 - 특정 상품 수량 변경
 // 삭제 - 특정 상품 제거
-
-// 추가기능
-// 장바구니 상품 총 가격
-// 장바구니 상품 전체 제거
+//     - 장바구니 상품 전체 제거
 
 let menu = {
   id: 1,
@@ -51,16 +49,17 @@ function updateQuantity(id, quantity) {
   displayMenu();
 }
 
-function updateSpicy(spicy) {
-  const value = order.findIndex(item => item.spicy === spicy);
+// 보통 장바구니 로직에 없는 설정이므로 제거함. (같은 단계일 때 동일 맵기 출력 구현이 안됨)
+// function updateSpicy(id, spicy) {
+//   const value = order.findIndex(item => item.id === id);
 
-  if (value !== item.spicy) {
-    order[value].spicy = spicy;
-  } else {
-    console.log(`동일한 맵기 단계입니다.`);
-  }
-  displayMenu();
-}
+//   if (value !== spicy) {
+//     order[value].spicy = spicy;
+//   } else {
+//     console.log(`동일한 맵기 단계입니다.`);
+//   }
+//   displayMenu();
+// }
 
 function removeFromOrder(id) {
   order = order.filter(item => item.id !== id);
@@ -69,7 +68,7 @@ function removeFromOrder(id) {
 
 function allClear() {
   order = [];
-  displayMenu();
+  console.log("=== Menu Contents ===");
   console.log('텅~');
 }
 
@@ -82,5 +81,7 @@ displayMenu();
 
 updateQuantity(3, 2);
 
-allClear();
+updateSpicy(2, 5);
+
+// allClear();
 
