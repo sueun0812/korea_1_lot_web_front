@@ -123,3 +123,4 @@ addToCart(3, 'graph', 3.5, 1);
 calculateTotal(); // Cart Total Price : $13.9
 clearCart();
 
+updateQuantity(1);

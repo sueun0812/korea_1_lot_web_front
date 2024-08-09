@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이미지 갤러리</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- 
+    ! 이미지 갤러리 기능 구현
+
+    1) 썸네일(대표이미지)를 출력
+    >> 처음에는 나열된 이미지의 첫 번째 이미지를 출력
+
+    2) 썸네일 아래에 이미지 5개를 나열
+    >> 원하는 이미지 선택으로 썸네일 변경
+
+    3) 다크모드 / 라이트 모드 전환
+    >> 하나의 버튼을 통해 토글 기능
+  -->
+
+  <h1>Image Gellery Practice</h1>
+
+  <div class="full-img">
+    <img src="../../../images/dog01.jpg" alt="대표썸네일" class="displayed-img" />
+    <!-- overlay : 씌우다 (다크모드 사용 필터)-->
+    <div class="overlay"></div>
+    <button class="dark">Darken</button>
+  </div>
+
+  <div class="thumb-bar">
+    <img src="../../../images/dog01.jpg" alt="이미지" />
+    <img src="../../../images/dog02.jpg" alt="이미지" />
+    <img src="../../../images/dog03.jpg" alt="이미지" />
+    <img src="../../../images/dog04.jpg" alt="이미지" />
+    <img src="../../../images/dog05.jpg" alt="이미지" />
+  </div>
+  
+  <script src="./main.js"></script>
+</body>
+</html>

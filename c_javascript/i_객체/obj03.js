@@ -17,7 +17,7 @@ function Person(firstName, lastName, age, gender,) {
   this.name = {
     first: firstName,
     last: lastName
-  };
+  },
 
   this.age = age;
   this.gender = gender;
