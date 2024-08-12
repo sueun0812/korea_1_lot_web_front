@@ -32,7 +32,7 @@ function callback1(callbackFunc) {  // callbackFunc 매개변수 (함수를 데�
   // 함수 내부에서 다양한 기능, 동작 작성 가능  
 
   for (let i = 0; i < 3; i++) {
-    callbackFunc(i);  // callbackFunc(pring함수)의 인자로 i값을 전달
+    callbackFunc(i);  // callbackFunc(print함수)의 인자로 i값을 전달
   }
 }
 // cf) let callbackFunc = (index) => {

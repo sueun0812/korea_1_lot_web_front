@@ -35,7 +35,7 @@ function callback(value, index, array) {}
 
 // : 매개변수는 함수 내부의 로컬 변수이기 때문에 이름 변경 가능
 
-// # 배열의 콜백 함수를 가지는 메서드 종료
+// # 배열의 콜백 함수를 가지는 메서드 종류
 // & 1. forEach()
 // : 각 요소에 대해 동일한 함수를 실행
 // : 배열 내부의 요소를 매개변수로 사용하여 콜백 함수를 호출
@@ -66,13 +66,13 @@ const newNumbers = numbers.map(function(value) {
 });
 // : 배열의 메서드로 반환되는 값은 자동으로 배열 내에 저장
 
-// 화살표 함수 사용 시
-// const arrowMap = numbers.map(value =>  value * value);
-
-// 화살표 축약 시
+// 화살표 함수 사용시
 const arrowMap = numbers.map((value) => {
   return value * value;
 });
+
+// 화살표 함수 축약시
+// const arrowMap = numbers.map(value =>  value * value);
 
 console.log(newNumbers);  // [529, 1681, 361, 49, 1296]
 
