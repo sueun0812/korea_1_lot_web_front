@@ -1,4 +1,4 @@
-// # mathOperations.js (2-1)
+// # mathOperations.js
 
 export function add(a, b) {
   return a + b;

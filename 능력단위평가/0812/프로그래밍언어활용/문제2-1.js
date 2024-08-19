@@ -1,10 +1,6 @@
 // # 문제 2-1.js
 
 class User {
-  name;
-  age;
-  email;
-
   constructor(name, age, email) {
     this.name = name;
     this.age = age;
@@ -17,24 +13,17 @@ class User {
 }
 
 class Product {
-  name;
-  price;
-
   constructor(name, price) {
     this.name = name;
     this.price = price;
   }
 
   printProduct() {
-    console.log(`상품명 : ${this.name}, 가격 : ${Product.price}`);
+    console.log(`상품명 : ${this.name}, 가격 : ${this.price}`);
   }
 }
 
 class Order {
-  user;
-  product;
-  quantity;
-
   constructor(user, product, quantity) {
     this.user = user;
     this.product = product;
@@ -42,7 +31,7 @@ class Order {
   }
 
   printOrderSummary() {
-    console.log(this.quantity);
+    console.log(`주문자 : ${this.user.name}, 상품 : ${this.product.name}, 가격 : ${this.quantity}, 총금액 : ${this.product.price * this.quantity}`);
   }
 }
 
@@ -54,5 +43,3 @@ product1.printProduct();
 
 let order1 = new Order(user1, product1, 2);
 order1.printOrderSummary();
-
-

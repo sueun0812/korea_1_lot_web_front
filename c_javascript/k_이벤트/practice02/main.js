@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let visibleItemsCount = 0;
 
     items.forEach(item => {
-      // item.textXontent
+      // item.textContent
       // : HTML 요소 객체의 내용값
 
       // 데이터.includes(값)

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div id = "left-box" class="container">
+    <div id="overlay">
+      <div id="date">
+        <p>Monady April 2024</p>
+      </div>
+      <div id="main-content">
+        <p id="weather-temp">-3 ℃</p>
+        <p id="city">Seoul</p>
+      </div>
+    </div>
+    </div>
+
+  <div id="right-box" class="container">
+    <div id="right-box-contents">
+    
+      <div id="right-box-top">
+        <input type="text" id="search-input" placeholder="search" />
+      </div>
+
+
+      <div id="right-box-bottom">
+          <div id="weatherDetails">
+            <p>Weather Details</p>
+            <div id="weatherDetails-list">
+              <ul id="detail-left">
+                <li>Max/Min Temp</li>
+                <li>Humidity</li>
+                <li>Wind</li>
+                <li>Cloudy</li>
+              </ul>
+              <ul id="detail-right">
+                <li>-4℃ / -3℃</li>
+                <li>29%</li>
+                <li>4.69km/h</li>
+                <li>1%</li>
+              </ul>
+            </div>
+          </div>
+            <label>
+              <input role="switch" type="checkbox" />
+              <span>알람</span>
+            </label>
+      </div>
+    </div>
+  </div>
+
+<script src="./main.js"></script>
+</body>
+</html>

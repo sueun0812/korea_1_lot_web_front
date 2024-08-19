@@ -46,7 +46,7 @@ console.log(Number.isFinite(minusInfinity));  // false
 console.log(Number.isFinite(10)); // true
 
 // # 2. String 객체의 기본 메서드
-// 문자열을 처리하는 메서드를 ㄹ제공
+// 문자열을 처리하는 메서드를 제공
 
 // & 1) trim()
 // : 문자열 양쪽 끝의 공백(띄어스기, 줄바꿈 등)을 없애는 메서드

@@ -2,27 +2,27 @@
 
 class ShoppingCart {
   constructor() {
-    this.Items = [];
+    this.items = [];
   }
 
   addItem(item) {
-    this.Items.push(item);
+    this.items.push(item);
   }
 
   calculateTotal() {
     let total = 0;
-    for (let i = 0; i <= this.Items.length; i++) { 
-      total += this.Items[i].price;
+    for (let i = 0; i < this.items.length; i++) { 
+      total += this.items[i].price;
     }
     return total;
   }
 
   printReceipt() {
-    if (this.Items.length = 0) {
+    if (this.items.length === 0) {
       console.log("Your cart is empty.");
     } else {
       console.log("Receipt:");
-      this.Items.forEach(function(item) {
+      this.items.forEach(function(item) {
         console.log(`${item.name}: $${item.price}`);
       });
       console.log(`Total: $${this.calculateTotal()}`);
