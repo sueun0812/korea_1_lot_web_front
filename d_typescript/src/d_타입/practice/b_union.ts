@@ -49,8 +49,24 @@ async function fetchUserData(userId: number) {
       throw new Error('Network response was not ok');
     }
 
-    const data = await response.json();
-    
+    // response 응답에서 data를 객체로 변환하여 반환
+    const data = await response.json(); // jsonplaceholder의 객체 구조를 모두 가지는 데이터
+
+    if (data.id) {
+      // 성공에 대한 이름과 이메일 데이터만을 가지는 객체 생성
+      const userData: FetchResponse = {
+        // 좌항(userData 객체의 속성): 우항(데이터 fetch로 가져온 데이터)
+        name: data.name,
+        email: data.email
+      };
+
+      // 성공에 대한 Success 타입의 데이터를 전달
+      handleResponse(userData);
+    } else {
+      // 존재하지 않는 사용자인 경우
+      handleResponse({ error: '사용자 데이터가 정확하지 않습니다.' });
+    }
+
   } catch(e) {
     // Fail 타입 >> 객체
     /*
@@ -64,3 +80,8 @@ async function fetchUserData(userId: number) {
     handleResponse({ error: e instanceof Error ? e.message : 'Unknown Error' });
   }
 }
+
+fetchUserData(1);
+fetchUserData(2);
+fetchUserData(222); // 에러 관리가 가능한 오류
+// fetchUserData('안녕'); - Error
