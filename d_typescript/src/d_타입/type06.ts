@@ -70,7 +70,105 @@ gameState = 1;
 // gameState = '노우';  - Error
 gameState = 'no';
 
+// # =====================================
+// ! 객체 리터럴 타입
+// : 실제 객체 데이터 정의
 
+type UserType = {
+  name: '정수은';
+  height: 165;
+};
+
+let user: UserType = {
+  name: '정수은',
+  // height: 170  // '170' 형식은 '165' 형식에 할당할 수 없습니다.
+  height: 165
+};
+
+// user.name = '정쪼꼬';  
+
+// ! 객체의 구조적 타이핑(덕 타이핑)
+// : 객체의 타입을 실제 값보다는 그 구조나 멤버에 의해 결정하는 방식
+// >> 객체의 형태가 같다면, 같은 타입으로 간주
+
+type Person = {
+  name: string;
+  age: number;
+}
+
+function greet(person: Person) {
+  console.log(`Name : ${person.name}, Age : ${person.age}`);
+}
+
+// Person 타입이 명시적으로 구현되지 않은 객체 생성
+const p1 = {
+  name: '정수은',
+  age: 10
+}
+
+const p2 = {
+  name: '정쪼꼬',
+  age: 12,
+  hobby: '산책'
+}
+
+const p3 = {
+  name: '박규병'
+}
+
+greet(p1);  // Person과 구조가 일치하기 때문에 Person 취급
+greet(p2);  // 구조적 타이핑에 의해 Person 취급 (hobby 속성을 무시)
+// greet(p3);  // >> Person 타입 속성 구조와 일치하지 않음
+
+// ! 중첩된 객체 타입 정의
+
+type Address = {
+  street: string;
+  readonly city: string;
+  zipCode?: string; // 선택적 프로퍼티 (옵셔널)
+}
+
+type UserProfile = {
+  username: string;
+  email: string;
+  address: Address;
+}
+
+let userA: UserProfile = {
+  username: '수은',
+  email: 'qwe123',
+  address: {
+    street: '123 St',
+    city: 'Busan',
+  }
+}
+
+// userA.address.city = '대전';
+userA.address.street = '중앙대로';
+
+// ! 객체의 인덱스 서명
+// : 객체의 모든 속성에 대해 타입을 정의하지 않고
+// >> 키와 값의 타입만 정의하여 구조를 유연하게 적용하는 방법
+
+type UserDataType = {
+  name: string; // - 일반적인 객체 속성 타입 명시
+
+  // ? 인덱스 서명 사용 방법
+  // [propertyName: indexType]: valueType;
+  // 키의 타입과 값의 타입을 미리 명시
+  [key: string]: string | number | boolean;  // 키는 string 사용을 권장
+  // >> valueType에는 어떤 타입이든 가능
+}
+
+let user1: UserDataType = {
+  name: '정수은',
+  height: '123',
+  age: 50,
+  isTeacher: false
+}
+
+// user1.email = [123, 234];
+user1.email = 'qwe123';
 
 
 
