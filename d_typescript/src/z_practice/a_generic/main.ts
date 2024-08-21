@@ -1,4 +1,5 @@
 // # main.ts
+export const tmp = '';
 
 // ! Todo 할 일 목록
 
@@ -25,6 +26,7 @@ type Task<T> = {
 class TaskManager<T> {
   // 1. 속성
   private tasks: Task<T>[]; // 할 일 목록을 저장할 배열
+  // private은 왜 달은거지?
   private nextId: number; // 다음 할 일에 할당할 고유 id
 
   constructor() {

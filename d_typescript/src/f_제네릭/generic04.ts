@@ -1,4 +1,5 @@
 // # generic04.ts
+export const tmp = '';
 
 // ! 유니온 타입과 제네릭
 

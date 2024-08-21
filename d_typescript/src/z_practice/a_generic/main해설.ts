@@ -121,6 +121,9 @@ class TaskManager<T> {
       li.appendChild(deleteButton);
       
       // 체크박스를 목록 항목의 맨 앞에 추가
+      // A요소.insertBefore(B요소, A요소.firstChild)
+      // : A요소 안에 B요소를 "삽입"
+      // >> A요소의 맨 앞의 요소보다 "전에"
       li.insertBefore(checkbox, li.firstChild);
       
       // 완성된 목록 항목을 컨테이너(HTML의 ul태그)에 추가
