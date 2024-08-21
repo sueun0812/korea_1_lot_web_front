@@ -1,0 +1,97 @@
+/* 전체 페이지에 대한 기본 스타일 */
+
+body {
+  background-color: #f0f4f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+
+  /* 
+  display: flex 설정 시 
+  "직접적인 자식 요소만" flex 아이템
+  >> div(class명 container)
+  */
+
+  display: flex;
+  /* 직접적인 자식 요소에 대한 배치 */
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+/* 컨테이너 스타일 */
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #007acc;
+}
+
+#task-count {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #007acc;
+}
+
+#task-input {
+  /* 
+  calc() 함수
+  : 단위값이 다른 길이에 대한 계산
+  */
+  width: calc(100% - 50px);
+  padding: 10px;
+  border: 2px solid #007acc;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#add-button {
+  background-color: #007acc;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3 ease;
+}
+
+#add-button:hover {
+  background-color: #12364d;
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 동적으로 생성 될 각 할 일 항목 스타일 */
+#task-list li{
+  background-color: #e6f2ff;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+
+  display: flex;
+
+  /* 각각의 항목 내부의 스타일 */
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+#task-list li:hover {
+  background-color: #cce0ff;
+}

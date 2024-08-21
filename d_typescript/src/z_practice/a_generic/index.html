@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo(클래스 & 제네릭)</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>할 일 목록</h1>
+    <!-- li 태그의 개수가 출력 -->
+    <div id="task-count">할 일 개수 : 0</div>
+    
+    <input type="text" id="task-input" />
+    
+    <!-- 해당 버튼 클릭 시 ul태그 내에 input의 할일이 ㅇ추가 -->
+    <button id="add-button">추가</button>
+
+    <!-- ul태그 내에 li태그는 ts로 동적 생성 + 추가 -->
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
