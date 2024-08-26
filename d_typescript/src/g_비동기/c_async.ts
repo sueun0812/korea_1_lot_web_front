@@ -10,10 +10,10 @@ export const tmp = '';
 // ? 1. async 함수 내에서만 await 사용이 가능
 // ? 2. 동기 코드와 유사한 형태로 비동기 코드 작성
 
-// 외부(jsonplaceholder)에서 데이털르 가져오는 함수
+// 외부(jsonplaceholder)에서 데이터를 가져오는 함수
 // : 시간이 오래 걸리는 작업
 async function fetchUserDate() {
-  // 외부와의 연결 시 발생할 요류를 방지
+  // 외부와의 연결 시 발생할 오류를 방지
   // : try - catch 블록 사용
   try {
     // 실행할 로직을 작성

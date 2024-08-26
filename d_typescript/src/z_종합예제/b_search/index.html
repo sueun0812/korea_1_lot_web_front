@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Search and Sort Users</h1>
+
+    <!-- 사용자 데이터 검색을 위한 input 태그 -->
+    <input type="text" id="search-input" placeholder="Search users...">
+
+    <!-- 사용자 데이터 정렬을 위한 select, option 태그 -->
+    <select id="sort-select">
+      <option value="name">Sort by Name</option>
+      <option value="email">Sort by Email</option>
+    </select>
+
+    <!-- 동적으로 생성되어 추가될 요소의 부모 요소 -->
+    <div id="user-list"></div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
