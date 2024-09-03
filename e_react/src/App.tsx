@@ -14,6 +14,7 @@ import Parent from './pages/c_Router/Parent';
 import Example01 from './pages/c_Router/Example01';
 import Example02 from './pages/c_Router/Example02';
 import RouterHook from './pages/d_RouterHook';
+import Axios from './pages/e_Axios';
 
 //! 리액트 프로젝트 개발 실행 명령어
 // npm run start
@@ -56,6 +57,7 @@ function App() {
         </Route>
 
         <Route path='/routerHook' element={<RouterHook />} />
+        <Route path='/axios' element={<Axios />} />
 
         {/* 예제 참고용 */}
         <Route path='/todos01' element={<Todos01 />} />
