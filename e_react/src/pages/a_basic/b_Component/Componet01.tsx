@@ -17,7 +17,7 @@ import puppy01 from '../../../assets/dog01.jpg';
 
 /*
 ! 컴포넌트 (Component)
-: 사용자 인커페이스(UI)를 구축하는 기본 요소
+: 사용자 인터페이스(UI)를 구축하는 기본 요소
 
 ? 컴포넌트 사용 방법
 1) 컴포넌트 내보내기 (export default)

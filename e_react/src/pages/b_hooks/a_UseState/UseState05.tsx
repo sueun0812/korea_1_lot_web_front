@@ -29,7 +29,7 @@ export default function UseState05() {
   };
 
   const addItem = () => {
-    const newItem = `Item ${items.length + 1} `;
+    const newItem = `Item ${items.length + 1}`;
 
     setItems([...items, newItem]);
   }
