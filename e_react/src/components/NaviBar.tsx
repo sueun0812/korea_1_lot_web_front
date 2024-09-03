@@ -14,7 +14,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function NaviBar() {
   const links = [
-    '/', 'basic', 'hooks', 'routerComponent', 'parent', 'routerHook', 'axios'
+    '/', 'basic', 'hooks', 'routerComponent', 'parent', 'routerHook', 'axios', 'globalState', 'style'
   ];
 
   return (
